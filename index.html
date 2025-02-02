@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <audio id="flip-sound" src="flip.mp3"></audio>
+    <audio id="match-sound" src="match.mp3"></audio>
+    <audio id="not-match-sound" src="not-match.mp3"></audio>
+    <audio id="background-music" src="background.mp3" loop></audio>
+    <button id="toggle-music" class="music-button" onclick="toggleMusic()">background Music</button>
+
+    <h1>Memory Cards</h1>
+    <div class="grid-container"></div>
+
+    <p>Score: <span class="score"></span></p>
+    <p>High Score: <span class="high-score"></span></p>
+
+    <div class="actions">
+      <button onclick="restart()">Restart</button>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="game-instructions" class="modal">
+      <div class="modal-content">
+        <h2>Welcome to Memory Card Game</h2>
+        <p>Flip the cards and match the pairs as quickly as you can!</p>
+        <button onclick="startGame()">Start Game</button>
+      </div>
+    </div>
+
+    <script src="indexj.js"></script>
+  </body>
+</html>
